@@ -42,7 +42,7 @@ $hierarquia = array(
 					//Inicio Supervisor de Suprimentos	
 					array(
 					
-						'nome_cargo'=>'Supervisor desuprimentos'
+						'nome_cargo'=>'Supervisor de suprimentos'
 					)	
 					//Termino Supervisor de Suprimentos
 					),
@@ -70,9 +70,9 @@ function exibe($cargos){
 
 		$html .= $cargo['nome_cargo']; 
 
-		if(isset($cargo['subordinado']) && count($cargo['subordinado']) > 0){
+		if(isset($cargo['subordinados']) && count($cargo['subordinados']) > 0){
 
-			$html.=exibe($cargo['subordinado']);
+			$html.=exibe($cargo['subordinados']);
 		}
 
 		$html .= '</li>';
