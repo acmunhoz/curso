@@ -10,15 +10,14 @@ function incluirClasses($nomeClasse){
 
 }
 
-spl_autoload_register("incluiClasses");
+spl_autoload_register("incluirClasses");
 
 
 spl_autoload_register(function ($nomeClasse){
 
-	if("abstrata".DIRECTORY_SEPARATOR.$nomeClasse) === true){
+	if(file_exists("abstratas".DIRECTORY_SEPARATOR.$nomeClasse.".php") === true){
 		
-		require_once("abstrata".DIRECTORY_SEPARATOR.$nomeClasse.".php");
-
+		require_once("abstratas".DIRECTORY_SEPARATOR.$nomeClasse.".php");
 	}
 
 });
