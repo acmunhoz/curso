@@ -16,4 +16,9 @@ $pass = "12345";
 
 $stmt->execute();
 
+$login="Cheta";
+$senha="1245";
+
+$stmt->execute();
+
  ?>
