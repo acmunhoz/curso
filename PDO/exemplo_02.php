@@ -1,10 +1,10 @@
 <?php 
 
-$conn = new PDO("mysql:host=localhost;dbname=dbphp7","root","and246");
+$conn = new PDO("mysql:host=localhost;dbname=dbphp7","root","");
 
 $stmt = $conn->prepare("INSERT INTO tb_usuarios (deslogin,dessenha) VALUES (:LOGIN, :PASSWORD)");
 
-$login = "anderon_c";
+$login = "Teste";
 $password="1234556";
 
 $stmt->bindParam(":LOGIN",$login);
