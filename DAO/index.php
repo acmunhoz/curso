@@ -31,12 +31,20 @@ $usuario->login("cheta","and246");
 echo $usuario;
 */
 
-
-$aluno = new Usuario("aluno","123mudar");
+/*
+$aluno = new Usuario("aluno2","123mudar");
 
 $aluno->insert();
 
 echo $aluno;
+*/
 
+$usuario = new Usuario();
+
+$usuario->loadById(24);
+
+$usuario->update("Anderon","123defr");
+
+echo $usuario; 
 
  ?>
