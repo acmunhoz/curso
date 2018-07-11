@@ -7,7 +7,7 @@ $data = array();
 foreach ($images as $img) {
 	if(!in_array($img, array(".",".."))){
 
-		$filename = "images".DIRECTORY_SEPARATOR.$img;
+		$filename = "imagens".DIRECTORY_SEPARATOR.$img;
 
 		$filename = str_replace("\\", "/", $filename);
 
